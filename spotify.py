@@ -2,10 +2,9 @@ import time
 import spotipy
 import requests
 
+from spotipy.oauth2 import SpotifyOAuth
 from geekmagic import set_image_theme, set_weather_forecast, upload_image_from_bytes, set_photo_album_image
 from image import convert_and_resize_to_jpeg, draw_information
-from spotipy.oauth2 import SpotifyOAuth
-from datetime import datetime
 
 # Spotify API credentials
 SPOTIFY_CLIENT_ID = "[REDACTED]"

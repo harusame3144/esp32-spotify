@@ -9,6 +9,6 @@ with open("aaaa.jpg", "rb") as image_file:
     
     if jpeg_buffer:
         upload_url = "http://192.168.1.145/doUpload?dir=/image/"
-        upload_image_from_bytes(jpeg_buffer.read(), "auto.jpg", upload_url)
+        upload_image_from_bytes(jpeg_buffer.read(), "auto.jpg")
         set_photo_album_image("auto.jpg")
         set_image_theme()
